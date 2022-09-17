@@ -1,0 +1,17 @@
+version: 0.1
+
+phases:
+  install: 
+   runtime-versions: 
+     golang: 1.18.1 
+  build:
+    commands:
+      - echo Build started on `date`
+      - echo Compiling the Go code
+      - go build cmd/main.go 
+  post_build:
+    commands:
+      - echo Build completed on `date`
+artifacts:
+  files:
+    - cmd/main.go

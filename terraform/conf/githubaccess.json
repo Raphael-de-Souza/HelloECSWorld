@@ -1,0 +1,6 @@
+{   
+    "token": "$Env:GITHUB_ACCESS_TOKEN",
+    "serverType": "GITHUB",
+    "authType": "PERSONAL_ACCESS_TOKEN",
+    "shouldOverwrite": true
+}

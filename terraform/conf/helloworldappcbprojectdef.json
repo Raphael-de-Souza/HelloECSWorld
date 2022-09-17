@@ -1,0 +1,17 @@
+{
+  "name": "helloworldcodebuildproject",
+  "source": {
+    "type": "GITHUB",
+    "location": "$Env:GITHUB_REPO_HTTPS_URL"
+  },
+  "artifacts": {
+    "type": "S3",
+    "location": "$Env:S3_BUCKET_NAME"
+  },
+  "environment": {
+    "type": "LINUX_CONTAINER",
+    "image": "aws/codebuild/amazonlinux2-x86_64-standard:3.0",
+    "computeType": "BUILD_GENERAL1_SMALL"
+  },
+  "serviceRole": "$Env:IAM_ROLE_ARN"
+}
